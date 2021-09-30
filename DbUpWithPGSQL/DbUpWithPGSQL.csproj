@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DBScripts\Script001_Create_EmpTbl.sql" />
+    <None Remove="DBScripts\Script002_Update_EmpTbl.sql" />
+    <None Remove="DBScripts\Script003_Update_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DBScripts\Script001_Create_EmpTbl.sql" />
+    <EmbeddedResource Include="DBScripts\Script002_Update_EmpTbl.sql" />
+    <EmbeddedResource Include="DBScripts\Script003_Update_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-core" Version="4.5.0" />
+    <PackageReference Include="dbup-postgresql" Version="4.5.0" />
+    <PackageReference Include="Npgsql" Version="5.0.10" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
