@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MySQLScripts\Script001_Create_EmpTbl.sql" />
+    <None Remove="MySQLScripts\Script002_InsertRecords_EmpTbl.sql" />
+    <None Remove="MySQLScripts\Script003_UpdateRecord_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="MySQLScripts\Script001_Create_EmpTbl.sql" />
+    <EmbeddedResource Include="MySQLScripts\Script002_InsertRecords_EmpTbl.sql" />
+    <EmbeddedResource Include="MySQLScripts\Script003_UpdateRecord_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-core" Version="4.5.0" />
+    <PackageReference Include="dbup-mysql" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

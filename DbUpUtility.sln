@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpWithPGSQL", "DbUpWithPGSQL\DbUpWithPGSQL.csproj", "{6AAA8C1B-3157-41C2-B43C-F3E78994A44F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbUpWithPGSQL", "DbUpWithPGSQL\DbUpWithPGSQL.csproj", "{6AAA8C1B-3157-41C2-B43C-F3E78994A44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpWithMSSQL", "DbUpWithMSSQL\DbUpWithMSSQL.csproj", "{43AE7764-9A34-416D-95E1-8CA91B9360F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpMySQL", "DbUpMySQL\DbUpMySQL.csproj", "{839E346A-089F-43F6-87AA-9DDFD74FD226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6AAA8C1B-3157-41C2-B43C-F3E78994A44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AAA8C1B-3157-41C2-B43C-F3E78994A44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AAA8C1B-3157-41C2-B43C-F3E78994A44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AE7764-9A34-416D-95E1-8CA91B9360F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AE7764-9A34-416D-95E1-8CA91B9360F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AE7764-9A34-416D-95E1-8CA91B9360F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AE7764-9A34-416D-95E1-8CA91B9360F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839E346A-089F-43F6-87AA-9DDFD74FD226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839E346A-089F-43F6-87AA-9DDFD74FD226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839E346A-089F-43F6-87AA-9DDFD74FD226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839E346A-089F-43F6-87AA-9DDFD74FD226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

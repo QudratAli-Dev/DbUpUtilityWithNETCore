@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DBMSSQLScripts\Script001_Create_EmpTbl.sql" />
+    <None Remove="DBMSSQLScripts\Script002_AddEmailMobileCols_EmpTbl.sql" />
+    <None Remove="DBMSSQLScripts\Script003_InsertRecords_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DBMSSQLScripts\Script001_Create_EmpTbl.sql" />
+    <EmbeddedResource Include="DBMSSQLScripts\Script002_AddEmailMobileCols_EmpTbl.sql" />
+    <EmbeddedResource Include="DBMSSQLScripts\Script003_InsertRecords_EmpTbl.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-core" Version="4.5.0" />
+    <PackageReference Include="dbup-sqlserver" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
